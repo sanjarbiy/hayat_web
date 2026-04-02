@@ -26,14 +26,14 @@ void main(){
     vec2 gd=(wp-vec2(.25+cos(t*.055)*.18,-.18+sin(t*.045)*.12))*vec2(.55,1.);
     float gm=smoothstep(.55,.0,length(gd));
     float dm=smoothstep(.3,.7,sm3(wp*.7+t*.02+2.))*.12;
-    vec3 c=vec3(.102,.039,.078);
-    c=mix(c,vec3(.07,.03,.055),dm);
-    c=mix(c,vec3(.44,.12,.28),bm*.4*(.65+.35*sin(t*.15)));
-    c=mix(c,vec3(.45,.36,.14),gm*.3*(.65+.35*cos(t*.12)));
-    c+=vec3(.01,.02,.01)*bm*gm;
+    vec3 c=vec3(1.,.96,.97);
+    c=mix(c,vec3(.98,.93,.95),dm);
+    c=mix(c,vec3(.95,.70,.80),bm*.35*(.65+.35*sin(t*.15)));
+    c=mix(c,vec3(.96,.88,.72),gm*.25*(.65+.35*cos(t*.12)));
+    c+=vec3(.01,.005,.008)*bm*gm;
     float l=dot(c,vec3(.3,.59,.11));
-    c+=c*smoothstep(.06,.2,l)*.08;
-    c+=(noise(uv*300.+t)-.5)*.012;
+    c-=c*smoothstep(.85,.95,l)*.03;
+    c+=(noise(uv*300.+t)-.5)*.008;
     gl_FragColor=vec4(clamp(c,0.,1.),1.);
 }`;
 
@@ -68,9 +68,9 @@ function initMeshFB(c){
         ctx.save();ctx.translate(cx,cy);ctx.scale(1,ry/rx);ctx.translate(-cx,-cy);ctx.fillStyle=gr;ctx.fillRect(0,0,w,h);ctx.restore();
     }
     (function draw(){
-        t+=.002;ctx.fillStyle='#1A0A14';ctx.fillRect(0,0,w,h);
-        ellipse((.35+Math.sin(t*.3)*.1)*w,(.35+Math.cos(t*.25)*.06)*h,w*.4,h*.28,170,50,110,.3);
-        ellipse((.65+Math.cos(t*.28)*.1)*w,(.6+Math.sin(t*.22)*.08)*h,w*.35,h*.25,115,92,36,.22);
+        t+=.002;ctx.fillStyle='#FFF5F8';ctx.fillRect(0,0,w,h);
+        ellipse((.35+Math.sin(t*.3)*.1)*w,(.35+Math.cos(t*.25)*.06)*h,w*.4,h*.28,240,160,190,.2);
+        ellipse((.65+Math.cos(t*.28)*.1)*w,(.6+Math.sin(t*.22)*.08)*h,w*.35,h*.25,220,200,140,.15);
         requestAnimationFrame(draw);
     })();
 }
