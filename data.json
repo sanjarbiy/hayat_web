@@ -7,7 +7,7 @@
       { "label": "Qanday ishlaydi", "href": "#how" },
       { "label": "Jamiyat", "href": "#community" }
     ],
-    "signup": { "label": "Yuklab oling", "href": "https://play.google.com/store/apps/details?id=com.hayat", "icon": "ti-brand-google-play" }
+    "signup": { "label": "Yuklab oling", "href": "hayat.apk", "icon": "ti-brand-google-play" }
   },
 
   "hero": {
@@ -15,7 +15,7 @@
     "tagIcon": "ti-device-mobile",
     "title": ["Ilhom. ", "Jamiyat.", " Hayot."],
     "desc": "Hayat — ayollar uchun yagona platforma. Go'zallik, sog'liq, karera, onalik va boshqa mavzular bo'yicha. O'zingizga kerakli mavzularni tanlang, suhbatlarga qo'shiling va tajribangizni ulashing.",
-    "cta": { "label": "Bepul boshlash", "href": "https://play.google.com/store/apps/details?id=com.hayat" },
+    "cta": { "label": "Bepul boshlash", "href": "hayat.apk" },
     "cta2": { "label": "Batafsil", "href": "#features" },
     "ctaIcon": "ti-arrow-right",
     "note": "Doimo bepul. Bank kartasi talab qilinmaydi.",
@@ -126,7 +126,7 @@
   "cta": {
     "title": "Jamoangiz shu yerda.",
     "desc": "O'z jamoasini topgan minglab ayollarga qo'shiling. Qiziqishlaringizni tanlang va ilhomlantiruvchi muhitning bir qismi bo'ling.",
-    "btn": { "label": "Hayat ga qo'shiling", "href": "https://play.google.com/store/apps/details?id=com.hayat" },
+    "btn": { "label": "Hayat ga qo'shiling", "href": "hayat.apk" },
     "btnIcon": "ti-arrow-right",
     "note": "Doimo bepul. Android da mavjud.",
     "noteIcon": "ti-device-mobile"
@@ -137,7 +137,7 @@
     "columns": [
       { "title": "Mahsulot", "links": [
         { "label": "Imkoniyatlar", "href": "#features" },
-        { "label": "Android ilova", "href": "https://play.google.com/store/apps/details?id=com.hayat" },
+        { "label": "Android ilova", "href": "hayat.apk" },
         { "label": "Sog'liq kalendari", "href": "#features" },
         { "label": "Yangiliklar", "href": "#" }
       ]},
