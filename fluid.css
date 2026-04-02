@@ -1,0 +1,225 @@
+/* 
+   Fluid Gradient Landing Page
+   Premium Modern Design System
+*/
+
+:root {
+    --bg-dark: #0c140c; /* Very deep forest green */
+    --color-teal: #00ffcc;
+    --color-gold: #ffd700;
+    --color-blue: #0080ff;
+    --color-lime: #a2ff00;
+    --text-primary: #ffffff;
+    --font-main: 'Outfit', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-primary);
+    font-family: var(--font-main);
+    overflow: hidden; /* Hide scrollbars for the fluid hero */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ── Fluid Background ── */
+.background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: radial-gradient(circle at center, #102010 0%, #0c140c 100%);
+    filter: blur(80px);
+    overflow: hidden;
+}
+
+.blob {
+    position: absolute;
+    border-radius: 50%;
+    mix-blend-mode: screen;
+    opacity: 0.6;
+    animation: float infinite alternate ease-in-out;
+}
+
+.blob-1 {
+    width: 60vw;
+    height: 60vw;
+    background: radial-gradient(circle, var(--color-teal) 0%, transparent 70%);
+    top: -10vh;
+    left: -10vw;
+    animation-duration: 25s;
+}
+
+.blob-2 {
+    width: 50vw;
+    height: 50vw;
+    background: radial-gradient(circle, var(--color-gold) 0%, transparent 70%);
+    bottom: -5vh;
+    right: -10vw;
+    animation-duration: 30s;
+    animation-delay: -5s;
+}
+
+.blob-3 {
+    width: 45vw;
+    height: 45vw;
+    background: radial-gradient(circle, #00ff88 0%, transparent 70%);
+    top: 30vh;
+    left: 40vw;
+    animation-duration: 22s;
+    animation-delay: -10s;
+}
+
+.blob-4 {
+    width: 40vw;
+    height: 40vw;
+    background: radial-gradient(circle, #ffe600 0%, transparent 70%);
+    top: 10vh;
+    right: 20vw;
+    animation-duration: 28s;
+    animation-delay: -15s;
+}
+
+@keyframes float {
+    0% { transform: translate(0, 0) scale(1) rotate(0deg); }
+    33% { transform: translate(10vw, -5vh) scale(1.1) rotate(45deg); }
+    66% { transform: translate(-5vw, 15vh) scale(0.9) rotate(-45deg); }
+    100% { transform: translate(5vw, -10vh) scale(1) rotate(10deg); }
+}
+
+/* ── Navigation ── */
+.nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 4rem;
+    z-index: 10;
+}
+
+.nav-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-primary);
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    opacity: 1;
+    transform: translateY(-2px);
+    text-shadow: 0 0 10px var(--color-teal);
+}
+
+/* ── Hero Section ── */
+.hero {
+    position: relative;
+    z-index: 1;
+    text-align: left;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 4rem;
+}
+
+.content-wrapper {
+    max-width: 800px;
+}
+
+.title {
+    font-size: clamp(3rem, 10vw, 7rem);
+    font-weight: 800;
+    line-height: 0.9;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+    opacity: 0.9;
+    letter-spacing: 0.05em;
+}
+
+.description {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 4rem;
+    opacity: 0.8;
+}
+
+.description p {
+    margin-bottom: 0.2rem;
+}
+
+/* ── Button ── */
+.btn-learn {
+    display: inline-block;
+    padding: 0.8rem 2.5rem;
+    border: 1.5px solid rgba(255, 255, 255, 0.4);
+    border-radius: 2rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 0.1em;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+}
+
+.btn-learn:hover {
+    background: white;
+    color: #0c140c;
+    border-color: white;
+    transform: scale(1.05) translateY(-5px);
+    box-shadow: 0 10px 40px rgba(255, 255, 255, 0.3);
+}
+
+/* ── Extras ── */
+.cursor-glow {
+    position: fixed;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(0, 255, 204, 0.05) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 5;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: width 0.3s ease, height 0.3s ease;
+}
+
+/* ── Mobile ── */
+@media (max-width: 768px) {
+    .nav { padding: 1.5rem 1.5rem; }
+    .hero { padding: 0 1.5rem; }
+    .title { font-size: 4rem; }
+    .nav-links { gap: 1rem; }
+}

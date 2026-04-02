@@ -1,0 +1,163 @@
+{
+  "nav": {
+    "mark": "H",
+    "wordmark": ["Hayat", ""],
+    "links": [
+      { "label": "Imkoniyatlar", "href": "#features" },
+      { "label": "Qanday ishlaydi", "href": "#how" },
+      { "label": "Jamiyat", "href": "#community" }
+    ],
+    "signup": { "label": "Yuklab oling", "href": "https://play.google.com/store/apps/details?id=com.hayat", "icon": "ti-brand-google-play" }
+  },
+
+  "hero": {
+    "tag": "Android ilovasida mavjud",
+    "tagIcon": "ti-device-mobile",
+    "title": ["Ilhom. ", "Jamiyat.", " Hayot."],
+    "desc": "Hayat — ayollar uchun yagona platforma. Go'zallik, sog'liq, karera, onalik va boshqa mavzular bo'yicha. O'zingizga kerakli mavzularni tanlang, suhbatlarga qo'shiling va tajribangizni ulashing.",
+    "cta": { "label": "Bepul boshlash", "href": "https://play.google.com/store/apps/details?id=com.hayat" },
+    "cta2": { "label": "Batafsil", "href": "#features" },
+    "ctaIcon": "ti-arrow-right",
+    "note": "Doimo bepul. Bank kartasi talab qilinmaydi.",
+    "noteIcon": "ti-shield-check",
+    "mockup": {
+      "url": "hayatapp.site",
+      "topicsLabel": "Sizning mavzularingiz",
+      "topics": [
+        { "icon": "ti-sparkles", "name": "Go'zallik", "on": true },
+        { "icon": "ti-heart", "name": "Sog'liq", "on": true },
+        { "icon": "ti-briefcase", "name": "Karera", "on": false },
+        { "icon": "ti-shirt", "name": "Moda", "on": true },
+        { "icon": "ti-plant", "name": "O'z-o'ziga g'amxo'rlik", "on": false },
+        { "icon": "ti-tools-kitchen-2", "name": "Retseptlar", "on": true },
+        { "icon": "ti-book", "name": "Kitoblar", "on": false },
+        { "icon": "ti-plane", "name": "Sayohat", "on": false }
+      ],
+      "posts": [
+        {
+          "name": "Madina S.", "initials": "MS", "color": "#D4508B",
+          "topic": "Go'zallik", "topicIcon": "ti-sparkles",
+          "text": "Tabiiy teri parvarishi rutinam — oddiy 3 qadamda porlaydi!",
+          "hasImg": false, "likes": "892", "comments": "47"
+        },
+        {
+          "name": "Nilufar K.", "initials": "NK", "color": "#C9A84C",
+          "topic": "Karera", "topicIcon": "ti-briefcase",
+          "text": "Dekretdan keyin ishga qaytdim. Mana qanday qilib vaqtimni rejalashtiraman.",
+          "hasImg": false, "likes": "1.5K", "comments": "128"
+        }
+      ],
+      "composePlaceholder": "Jamiyatga nimadir ulashing...",
+      "composeIcons": ["ti-photo", "ti-microphone", "ti-video"],
+      "likeIcon": "ti-heart",
+      "commentIcon": "ti-message"
+    }
+  },
+
+  "stats": [
+    { "value": "10K+", "label": "Faol a'zolar", "icon": "ti-users" },
+    { "value": "16+", "label": "Mavzular", "icon": "ti-layout-grid" },
+    { "value": "100K+", "label": "Postlar", "icon": "ti-flame" },
+    { "value": "4.9", "label": "Reyting", "icon": "ti-star" }
+  ],
+
+  "features": {
+    "label": "Imkoniyatlar",
+    "title": "Hammasi bir joyda.",
+    "desc": "Qiziqishlaringizni tanlashdan sog'liq kalendarigacha — ayollar uchun barcha vositalar.",
+    "items": [
+      { "icon": "ti-layout-grid", "title": "Mavzu tanlash", "desc": "Go'zallik, moda, sog'liq, onalik — 16+ mavzudan tanlang. Lentangiz sizga kerakli narsalar atrofida quriladi." },
+      { "icon": "ti-pencil", "title": "Postlar va muhokamalar", "desc": "Tajribangizni ulashing, maslahat so'rang yoki boshqalarga yordam bering. Jamiyat bilan bog'laning." },
+      { "icon": "ti-photo", "title": "Rasm va media", "desc": "Rasm va natijalarni to'g'ridan-to'g'ri lentangizga ulashing. Sifatli siqish bilan." },
+      { "icon": "ti-microphone", "title": "Ovozli xabarlar", "desc": "Izohlarni ovozli xabar sifatida yozing. Yozish kerak emas — gapiring!" },
+      { "icon": "ti-calendar-heart", "title": "Sog'liq kalendari", "desc": "Hayz sikli, homiladorlik va rejalashtirish — hammasini maxfiy kuzatib boring." },
+      { "icon": "ti-shield-check", "title": "Xavfsiz muhit", "desc": "Faqat ayollar uchun. Haqiqiy moderatsiya, maxfiylik va hurmat bilan." }
+    ]
+  },
+
+  "how": {
+    "label": "Qanday ishlaydi",
+    "title": "Uch qadamda jamoangiz.",
+    "desc": "Boshlash bir daqiqa ham olmaydi.",
+    "steps": [
+      { "num": "01", "icon": "ti-list-check", "title": "Mavzularni tanlang", "desc": "Go'zallik, sog'liq, karera, moda — o'zingizga kerakli mavzularni belgilang." },
+      { "num": "02", "icon": "ti-news", "title": "Lentangizni ko'ring", "desc": "Tanlagan mavzularingiz bo'yicha postlar, maslahatlar va ilhomlantiruvchi kontentni ko'ring." },
+      { "num": "03", "icon": "ti-send", "title": "Tajribangizni ulashing", "desc": "Post yozing, rasm ulashing, ovozli xabar qo'ying. Ayollar jamoasiga qo'shiling." }
+    ],
+    "picker": {
+      "title": "Sizga nima qiziq?",
+      "sub": "Boshlash uchun 3+ mavzu tanlang",
+      "items": [
+        { "icon": "ti-sparkles", "name": "Go'zallik", "on": true },
+        { "icon": "ti-shirt", "name": "Moda", "on": true },
+        { "icon": "ti-leaf", "name": "Salomatlik", "on": false },
+        { "icon": "ti-diamond", "name": "Teri parvarishi", "on": true },
+        { "icon": "ti-activity", "name": "Fitnes", "on": false },
+        { "icon": "ti-heart", "name": "Homiladorlik", "on": true },
+        { "icon": "ti-tools-kitchen-2", "name": "Retseptlar", "on": false },
+        { "icon": "ti-briefcase", "name": "Karera", "on": false },
+        { "icon": "ti-plane", "name": "Sayohat", "on": true }
+      ],
+      "btnLabel": "Davom etish",
+      "countTemplate": "{n} ta tanlandi"
+    }
+  },
+
+  "community": {
+    "label": "Jamiyat",
+    "title": "Haqiqiy ayollar. Haqiqiy tajribalar.",
+    "desc": "Hayat a'zolarining fikrlari.",
+    "quotes": [
+      {
+        "text": "Homiladorlik paytida kundalik maslahatlar juda foydali bo'ldi. Har hafta bolam qanday o'syotganini kuzatib bordim.",
+        "name": "Dilnoza R.", "handle": "Homiladorlik va Sog'liq", "initials": "DR", "color": "#D4508B"
+      },
+      {
+        "text": "Go'zallik va teri parvarishi bo'yicha tabiiy retseptlar topdim. Jamoa juda samimiy va yordamchi.",
+        "name": "Kamola A.", "handle": "Go'zallik va Teri parvarishi", "initials": "KA", "color": "#C9A84C"
+      },
+      {
+        "text": "Dekretdan keyin karerani qayta boshlash qiyin edi. Bu yerdagi ayollar haqiqiy tajribalarini ulashdi va menga dalda berdi.",
+        "name": "Shahlo M.", "handle": "Karera va Onalik", "initials": "ShM", "color": "#8B5CF6"
+      }
+    ]
+  },
+
+  "cta": {
+    "title": "Jamoangiz shu yerda.",
+    "desc": "O'z jamoasini topgan minglab ayollarga qo'shiling. Qiziqishlaringizni tanlang va ilhomlantiruvchi muhitning bir qismi bo'ling.",
+    "btn": { "label": "Hayat ga qo'shiling", "href": "https://play.google.com/store/apps/details?id=com.hayat" },
+    "btnIcon": "ti-arrow-right",
+    "note": "Doimo bepul. Android da mavjud.",
+    "noteIcon": "ti-device-mobile"
+  },
+
+  "footer": {
+    "desc": "Ayollar uchun jamiyat platformasi. Ilhom, sog'liq, go'zallik va karera — hammasi bir joyda.",
+    "columns": [
+      { "title": "Mahsulot", "links": [
+        { "label": "Imkoniyatlar", "href": "#features" },
+        { "label": "Android ilova", "href": "https://play.google.com/store/apps/details?id=com.hayat" },
+        { "label": "Sog'liq kalendari", "href": "#features" },
+        { "label": "Yangiliklar", "href": "#" }
+      ]},
+      { "title": "Jamiyat", "links": [
+        { "label": "Mavzular", "href": "#how" },
+        { "label": "Qoidalar", "href": "#" },
+        { "label": "Blog", "href": "#" },
+        { "label": "Yordam", "href": "#" }
+      ]},
+      { "title": "Huquqiy", "links": [
+        { "label": "Maxfiylik", "href": "#" },
+        { "label": "Shartlar", "href": "#" },
+        { "label": "Cookie", "href": "#" },
+        { "label": "Aloqa", "href": "#" }
+      ]}
+    ],
+    "copy": "\u00a9 2026 Hayat. Barcha huquqlar himoyalangan.",
+    "socials": [
+      { "icon": "ti-brand-instagram", "label": "Instagram", "href": "#" },
+      { "icon": "ti-brand-telegram", "label": "Telegram", "href": "#" }
+    ]
+  }
+}
