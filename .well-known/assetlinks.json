@@ -1,0 +1,13 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "site.hayatapp",
+      "sha256_cert_fingerprints": [
+        "19:8C:D9:8F:E9:F5:99:C9:98:6B:75:5A:32:C1:EE:4C:39:44:7C:D4:F8:FD:78:8F:F4:E8:A1:65:90:C6:92:AD",
+        "75:94:2B:3C:51:11:3A:08:3D:55:33:C5:D4:6D:6D:32:15:45:E5:12:64:7D:D1:EE:86:CC:ED:EC:83:6C:71:1E"
+      ]
+    }
+  }
+]
