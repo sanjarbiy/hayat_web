@@ -18,44 +18,26 @@
             text-align: center;
             padding: 24px;
         }
-        .card {
-            max-width: 380px;
-            width: 100%;
-        }
+        .card { max-width: 380px; width: 100%; }
         .logo {
-            width: 64px;
-            height: 64px;
-            border-radius: 16px;
+            width: 64px; height: 64px; border-radius: 16px;
             background: linear-gradient(135deg, #2E5BFF, #D4A855);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 24px;
-            font-size: 28px;
-            font-weight: 800;
-            color: #fff;
+            display: flex; align-items: center; justify-content: center;
+            margin: 0 auto 24px; font-size: 28px; font-weight: 800; color: #fff;
         }
         h1 { font-size: 20px; font-weight: 700; margin-bottom: 8px; }
         p { font-size: 14px; color: #888; margin-bottom: 24px; line-height: 1.5; }
         .spinner {
             width: 24px; height: 24px;
-            border: 2.5px solid #333;
-            border-top-color: #2E5BFF;
-            border-radius: 50%;
-            animation: spin 0.8s linear infinite;
+            border: 2.5px solid #333; border-top-color: #2E5BFF;
+            border-radius: 50%; animation: spin 0.8s linear infinite;
             margin: 0 auto 20px;
         }
         @keyframes spin { to { transform: rotate(360deg); } }
         .btn {
-            display: inline-block;
-            padding: 12px 32px;
-            background: #2E5BFF;
-            color: #fff;
-            font-size: 15px;
-            font-weight: 600;
-            border-radius: 999px;
-            text-decoration: none;
-            transition: opacity 0.2s;
+            display: inline-block; padding: 12px 32px;
+            background: #2E5BFF; color: #fff; font-size: 15px; font-weight: 600;
+            border-radius: 999px; text-decoration: none; transition: opacity 0.2s;
         }
         .btn:hover { opacity: 0.85; }
         .sub { font-size: 12px; color: #555; margin-top: 16px; }
@@ -75,15 +57,27 @@
     </div>
     <script>
         (function() {
-            var path = window.location.pathname;
-            var intentUrl = 'intent:/' + path + '#Intent;scheme=https;package=site.hayatapp;S.browser_fallback_url=' +
-                encodeURIComponent('https://play.google.com/store/apps/details?id=site.hayatapp') + ';end';
+            // Sanitize path: only allow /post/{id} or /user/{username}
+            // IDs/usernames must be alphanumeric + underscore + hyphen only
+            var match = window.location.pathname.match(/^\/(post|user)\/([a-zA-Z0-9_-]+)\/?$/);
+            if (!match) {
+                document.getElementById('spinner').style.display = 'none';
+                document.getElementById('msg').textContent = 'Invalid link';
+                return;
+            }
 
-            // Try opening via Android intent
+            var type = match[1];
+            var id = match[2];
+            var safePath = '/' + type + '/' + id;
+            var playUrl = 'https://play.google.com/store/apps/details?id=site.hayatapp';
+            var intentUrl = 'intent://hayatapp.site' + safePath +
+                '#Intent;scheme=https;package=site.hayatapp;S.browser_fallback_url=' +
+                encodeURIComponent(playUrl) + ';end';
+
             var start = Date.now();
             window.location.href = intentUrl;
 
-            // If still here after 1.5s, app didn't open — show fallback
+            // If still here after 1.5s, app didn't open
             setTimeout(function() {
                 if (Date.now() - start < 3000) {
                     document.getElementById('spinner').style.display = 'none';
